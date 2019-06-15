@@ -29,7 +29,15 @@ export default Component.extend({
     let componentName = templateMap.get(templateString);
     if (componentName === undefined) {
       let owner = getOwner(this);
-      let compiledTemplate = compileTemplate(templateString);
+
+      let compiledTemplate;
+      try {
+        compiledTemplate = compileTemplate(templateString);
+      } catch (err) {
+        console.error(err);
+        console.log(templateString);
+        compiledTemplate = compileTemplate(`<DynamicTemplateError />`)
+      }
 
       componentName = `some-prefix-${templateId++}`;
       owner.register(`template:components/${componentName}`, compiledTemplate);
