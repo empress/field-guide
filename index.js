@@ -72,7 +72,7 @@ module.exports = {
 
   urlsForPrember() {
     const content = walkSync('docs', {
-      globs: ['*.md'],
+      globs: ['**/*.md'],
     });
 
     const staticUrls = ['/'];
