@@ -1,8 +1,9 @@
 'use strict';
 
 const path = require('path');
-
 const resolve = require('resolve');
+const walkSync = require('walk-sync');
+
 const StaticSiteJson = require('broccoli-static-site-json');
 const MergeTrees = require('broccoli-merge-trees');
 const Funnel = require('broccoli-funnel');
@@ -67,5 +68,17 @@ module.exports = {
       docs,
       toc,
     ]);
+  },
+
+  urlsForPrember() {
+    const content = walkSync('docs', {
+      globs: ['*.md'],
+    });
+
+    const staticUrls = ['/'];
+
+    const contentUrls = content.map(file => file.replace(/\.md$/, ''));
+
+    return [...staticUrls, ...contentUrls];
   },
 };
