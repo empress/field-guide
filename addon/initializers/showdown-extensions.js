@@ -43,7 +43,12 @@ export function initialize(/* application */) {
           attributeString = match[3];
         }
 
-        let preBlock = `<pre class="language-${language}"><code ${language ? `class="${language} language-${language}"` : ''}>${Prism.highlight(codeblock, Prism.languages[language], language) + end}</code></pre>`;
+        let highlightedCodeBlock = Prism.highlight(codeblock, Prism.languages[language], language) + end;
+
+        // escape { and } for the code sample
+        highlightedCodeBlock = highlightedCodeBlock.replace(/{/g, '&#123;').replace(/}/g, '&#125;')
+
+        let preBlock = `<pre class="language-${language}"><code ${language ? `class="${language} language-${language}"` : ''}>${highlightedCodeBlock}</code></pre>`;
 
         if(attributeString.includes('data-execute=false')) {
           codeblock = preBlock;
