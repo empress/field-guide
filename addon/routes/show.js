@@ -3,7 +3,9 @@ import fetch from 'fetch';
 
 export default Route.extend({
   model(params) {
-    return fetch(`/docs/${params.path}.json`)
+    // remove trailing slash
+    let path = params.path.replace(/\/$/, '');
+    return fetch(`/docs/${path}.json`)
       .then(res => res.json())
       .then((res) => {
         return {
