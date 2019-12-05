@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path')
+const stringUtils = require('ember-cli-string-utils');
 
 const { applyConfig } = require('empress-blueprint-helpers');
 
@@ -21,6 +22,19 @@ module.exports = {
         return '';
       }
     }
+  },
+
+  locals: function(options) {
+    let packageName = options.project.name();
+    let dasherizedPackageName = stringUtils.dasherize(packageName);
+
+    if(options.project.isEmberCLIAddon()) {
+      dasherizedPackageName = 'dummy';
+    }
+
+    return {
+      dasherizedPackageName,
+    };
   },
 
   filesToRemove: ['app/templates/application.hbs'],
