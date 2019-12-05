@@ -3,7 +3,7 @@ Field Guide
 
 This project is designed to be a fully-functional, static site implementation of a design system (or styleguide) documentation site. It is intended to be installed in your Ember Addon and then can be deployed statically on AWS, Netlify or any other static site deployment system.
 
-If you want an example of the this "in production" then check out the new [redesign branch of the Ember Styleguide Stone Circle Blog](https://deploy-preview-145--ember-styleguide.netlify.com/).
+If you want an example of the this "in production" then check out the new [redesign branch of the Ember Styleguide](https://deploy-preview-145--ember-styleguide.netlify.com/).
 
 You do not need to be a web **developer** to be able to use this system. You just write markdown files and the rest of the work is performed by EmberJS' build system.
 
