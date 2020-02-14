@@ -42,6 +42,7 @@ export default Component.extend({
       }
 
       componentName = `some-prefix-${templateId++}`;
+      owner.register(`component:${componentName}`, Component.extend({}))
       owner.register(`template:components/${componentName}`, compiledTemplate);
     }
 
