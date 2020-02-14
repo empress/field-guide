@@ -1,14 +1,16 @@
 {
   "name": "field-guide",
   "version": "1.0.3",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "a fully-functional, static site implementation of a design system documentation site",
   "keywords": [
     "ember-addon",
-    "prember-plugin"
+    "prember-plugin",
+    "empress",
+    "field-guide"
   ],
-  "repository": "",
+  "repository": "https://github.com/empress/field-guide",
   "license": "MIT",
-  "author": "",
+  "author": "Chris Manson <chris@manson.ie>",
   "directories": {
     "doc": "doc",
     "test": "tests"
