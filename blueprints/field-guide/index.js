@@ -39,7 +39,14 @@ module.exports = {
 
   filesToRemove: ['app/templates/application.hbs'],
 
-  afterInstall() {
+  async afterInstall() {
+    await this.addAddonsToProject({
+      packages: [
+        'prember',
+        'ember-cli-fastboot'
+      ]
+    });
+
     applyConfig(this.project, 'field-guide', {
       name: 'Product Name',
       copyright: 'This is the default copyright string - update before publishing',
