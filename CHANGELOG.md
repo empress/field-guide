@@ -1,4 +1,9 @@
 
+1.1.0 / 2020-05-13
+==================
+
+  * install ember-cli-fastboot and prember on install of field-guide #20 from @mansona
+
 1.0.4 / 2020-02-14
 ==================
 
