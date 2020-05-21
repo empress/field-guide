@@ -48,12 +48,22 @@ let ENV = {
     name: 'Ember', // product name
     logo: '/ember-logo.png', // if you don't have a logo it will create one for you from the product name
     copyright: 'Ember Field Guide is designed to document the [ember-styleguide](https://github.com/ember-learn/ember-styleguide) project. For more information view the readme',
-    github: 'https://github.com/ember-learn/ember-styleguide'
+    social: [{
+      name: 'github',
+      title: 'Ember Styleguide - Repository',
+      link: 'https://github.com/ember-learn/ember-styleguide'
+    }, {
+      name: 'twitter',
+      title: 'Ember Styleguide - Twitter',
+      link: 'https://twitter.com/emberjs'
+    }]
   }
 }
 ```
 
-**Note:** the images like `/images/logo.png` will need to be in your `public` folder in your addon.
+**Note:** 
+- The images like `/ember-logo.png` will need to be in your `public` folder in your addon.
+- You can add as many social links as you want in the `social` array. However, remember to add a logo image in your `public` folder for the custom social links with a name matching the `name` field in your link object. If you are using `field-guide-default-template`, the logos for `github` and `twitter` links will be included by the template for you.
 
 
 Contributing
