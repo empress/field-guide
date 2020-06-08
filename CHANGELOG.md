@@ -1,4 +1,10 @@
 
+1.2.0 / 2020-06-08
+==================
+
+  * Fix initial install #24 from @mansona
+  * option for multiple social links #15 from @gokatz
+
 1.1.0 / 2020-05-13
 ==================
 
