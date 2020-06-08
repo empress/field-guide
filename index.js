@@ -12,6 +12,20 @@ const TableOfContents = require('./lib/table-of-contents');
 module.exports = {
   name: require('./package').name,
 
+  config(env, config) {
+    let fastboot = config.fastboot || {};
+
+    if(fastboot.hostWhitelist) {
+      fastboot.hostWhitelist.push(/localhost:\d+/);
+    } else {
+      fastboot.hostWhitelist = [/localhost:\d+/];
+    }
+
+    return {
+      fastboot,
+    }
+  },
+
   included(app) {
 
     this.import('vendor/ember/ember-template-compiler.js');
