@@ -42,8 +42,9 @@ module.exports = {
   async afterInstall() {
     await this.addAddonsToProject({
       packages: [
+        'ember-cli-fastboot',
+        'ember-fetch',
         'prember',
-        'ember-cli-fastboot'
       ]
     });
 
