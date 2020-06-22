@@ -59,15 +59,21 @@ export function initialize(/* application */) {
 
         let autoExecuteLanguages = fieldGuideConfig.autoExecuteLanguages || ['html', 'handlebars', 'hbs'];
 
-        if(attributeString.includes('data-execute=false') || !autoExecuteLanguages.includes(language)) {
+        let selfExecutingBlock = `<div class="self-executing-code-block">
+  <div class="example">
+    ${inputCodeblock}
+  </div>
+  ${preBlock}
+</div>`;
+
+        if(attributeString.includes('data-execute=false')) {
           codeblock = preBlock;
+        } else if (attributeString.includes('data-execute=true')) {
+          codeblock = selfExecutingBlock;
+        } else if (autoExecuteLanguages.includes(language)) {
+          codeblock = selfExecutingBlock
         } else {
-          codeblock = `<div class="self-executing-code-block">
-    <div class="example">
-      ${inputCodeblock}
-    </div>
-    ${preBlock}
-  </div>`;
+          codeblock = preBlock;
         }
 
 
