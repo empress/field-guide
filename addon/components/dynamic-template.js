@@ -41,8 +41,15 @@ export default Component.extend({
         compiledTemplate = compileTemplate(`<DynamicTemplateError />`)
       }
 
+      let component = owner.factoryFor(`component:${this.componentId}`);
+
+      if(!component) {
+        component = Component.extend({});
+      }
+
       componentName = `some-prefix-${templateId++}`;
-      owner.register(`component:${componentName}`, Component.extend({}))
+
+      owner.register(`component:${componentName}`, component);
       owner.register(`template:components/${componentName}`, compiledTemplate);
     }
 
