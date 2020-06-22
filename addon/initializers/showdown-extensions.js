@@ -32,8 +32,6 @@ export function initialize(/* application */) {
         let language = '';
         let attributeString = '';
 
-
-
         if(match && match[1]) {
           language = match[1];
           // languageString = ' class="' + match[1] + ' language-' + match[1] + '"';
@@ -41,6 +39,11 @@ export function initialize(/* application */) {
 
         if (match && match[3]) {
           attributeString = match[3];
+        }
+
+        if(!language) {
+          // set the default to shell
+          language = 'shell';
         }
 
         let highlightedCodeBlock = Prism.highlight(codeblock, Prism.languages[language], language) + end;
