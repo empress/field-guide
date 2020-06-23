@@ -2,6 +2,10 @@
 
 import showdown from 'showdown';
 
+import config from 'ember-get-config';
+
+let fieldGuideConfig = config['field-guide'] || {};
+
 export function initialize(/* application */) {
 
   showdown.subParser('githubCodeBlocks', function (text, options, globals) {
@@ -32,8 +36,6 @@ export function initialize(/* application */) {
         let language = '';
         let attributeString = '';
 
-
-
         if(match && match[1]) {
           language = match[1];
           // languageString = ' class="' + match[1] + ' language-' + match[1] + '"';
@@ -43,6 +45,11 @@ export function initialize(/* application */) {
           attributeString = match[3];
         }
 
+        if(!language) {
+          // set the default to shell
+          language = 'shell';
+        }
+
         let highlightedCodeBlock = Prism.highlight(codeblock, Prism.languages[language], language) + end;
 
         // escape { and } for the code sample
@@ -50,15 +57,23 @@ export function initialize(/* application */) {
 
         let preBlock = `<pre class="language-${language}"><code ${language ? `class="${language} language-${language}"` : ''}>${highlightedCodeBlock}</code></pre>`;
 
+        let autoExecuteLanguages = fieldGuideConfig.autoExecuteLanguages || ['html', 'handlebars', 'hbs'];
+
+        let selfExecutingBlock = `<div class="self-executing-code-block">
+  <div class="example">
+    ${inputCodeblock}
+  </div>
+  ${preBlock}
+</div>`;
+
         if(attributeString.includes('data-execute=false')) {
           codeblock = preBlock;
+        } else if (attributeString.includes('data-execute=true')) {
+          codeblock = selfExecutingBlock;
+        } else if (autoExecuteLanguages.includes(language)) {
+          codeblock = selfExecutingBlock
         } else {
-          codeblock = `<div class="self-executing-code-block">
-    <div class="example">
-      ${inputCodeblock}
-    </div>
-    ${preBlock}
-  </div>`;
+          codeblock = preBlock;
         }
 
 
