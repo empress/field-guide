@@ -1,4 +1,11 @@
 
+1.3.0 / 2020-06-23
+==================
+
+  * restrict auto-executing languages to html and handlebars by default #28 from @mansona
+  * fix crash with code blocks that are missing a language #28 from @mansona
+  * add basic dev environment #28 from @mansona
+
 1.2.0 / 2020-06-08
 ==================
 
