@@ -56,6 +56,9 @@ module.exports = {
         title: 'Design System Documentation - Repository',
         link: 'https://github.com/empress/field-guide?update-with-your-repo-url'
       }]
-    })
+    });
+
+    applyConfig(this.project, 'locationType', 'trailing-history', true);
+    applyConfig(this.project, 'historySupportMiddleware', true, true);
   }
 };

@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'dummy',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'trailing-history',
 
     EmberENV: {
       FEATURES: {
@@ -32,7 +32,9 @@ module.exports = function(environment) {
         title: 'Field Guide Github',
         link: 'https://github.com/empress/field-guide'
       }]
-    }
+    },
+
+    historySupportMiddleware: true
   };
 
   if (environment === 'development') {
