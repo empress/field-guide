@@ -1,3 +1,9 @@
+1.4.0 / 2020-06-28
+==================
+
+  * fix the link to ember-styleguide in the default blueprint #33 from @mansona
+  * Use "trailing history" location type #32 from @mansona
+  * support rootUrl other than `/` #31 from @mansona
 
 1.3.0 / 2020-06-23
 ==================
