@@ -1,6 +1,6 @@
 {{#each releases}}
-x.x.x / {{isoDate}}
-==================
+  x.x.x / {{isoDate}}
+  ==================
   {{#if merges}}
     {{#each merges}}
       * {{#if commit.breaking}}**Breaking change:** {{/if}}{{message}} #{{id}} from @{{githubIssue.user.login}}
