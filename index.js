@@ -26,8 +26,18 @@ module.exports = {
     }
   },
 
-  included(app) {
+  treeForApp(tree) {
+    let backingClasses = new Funnel(
+      'docs',
+      {
+        destDir: 'components',
+        include: ['**/*.js']
+      }
+    );
+    return new MergeTrees([tree, backingClasses]);
+  },
 
+  included(app) {
     this.import('vendor/ember/ember-template-compiler.js');
 
     if(!app.options['ember-prism']) {
