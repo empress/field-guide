@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "ember build --environment=production",
-    "changelog": "auto-changelog --template changelog.template.hbs --unreleased-only --prepend --load-github-issue-data --github-cache-dir .changelog",
+    "changelog": "auto-changelog --template changelog.template --unreleased-only --prepend --load-github-issue-data --github-cache-dir .changelog",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
