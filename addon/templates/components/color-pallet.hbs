@@ -29,13 +29,15 @@
     {{#if @class-name}}
       <dl>
         <dt class="color-pallet__details-title">Class Name</dt>
+        {{!-- template-lint-disable  --}}
         <dd>{{@class-name}}</dd>
+        {{!-- template-lint-enable  --}}
       </dl>
     {{/if}}
 
     <dl>
       <dt class="color-pallet__details-title">RGB</dt>
-      <dd>{{rgbString}}</dd>
+      <dd>{{this.rgbString}}</dd>
     </dl>
 
     <dl>
