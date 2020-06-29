@@ -34,6 +34,7 @@
     "ember-cli-string-utils": "^1.1.0",
     "ember-get-config": "^0.2.4",
     "ember-prism": "^0.4.0",
+    "ember-test-selectors": "^4.1.0",
     "empress-blueprint-helpers": "^1.2.1",
     "resolve": "^1.11.0",
     "walk-sync": "^1.1.3"
