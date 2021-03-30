@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 import Component from '@ember/component';
+import GlimmerComponent from '@glimmer/component';
 import layout from '../templates/components/dynamic-template';
 
 import { computed } from '@ember/object';
@@ -24,7 +25,7 @@ export default Component.extend({
     this.templateMap = templateMap;
   },
 
-  componentName: computed('templateString', function() {
+  componentName: computed('templateString', 'componentId', function() {
     let { templateMap, templateString } = this;
     if (!templateString) { return null; }
 
@@ -41,8 +42,17 @@ export default Component.extend({
         compiledTemplate = compileTemplate(`<DynamicTemplateError />`)
       }
 
+      let component = owner.factoryFor(`component:${this.componentId}`);
+
+      if(!component) {
+        component = class extends GlimmerComponent {};
+      } else {
+        component = class extends component.class {}
+      }
+
       componentName = `some-prefix-${templateId++}`;
-      owner.register(`component:${componentName}`, Component.extend({}))
+
+      owner.register(`component:${componentName}`, component);
       owner.register(`template:components/${componentName}`, compiledTemplate);
     }
 
