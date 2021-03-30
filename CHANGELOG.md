@@ -1,3 +1,10 @@
+1.5.0 / 2021-03-30
+==================
+
+  * Add Optional Component Classes #27 from @mansona
+  * Move to GitHub actions #38 from @mansona
+  * Update dependencies #36 from @mansona
+
 1.4.0 / 2020-06-28
 ==================
 
