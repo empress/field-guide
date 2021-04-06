@@ -26,6 +26,7 @@ module.exports = function(environment) {
     'field-guide': {
       name: 'Field Guide',
       copyright: '',
+      host: 'https://field-guide.netlify.app/',
 
       social: [{
         name: 'github',
