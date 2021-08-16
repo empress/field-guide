@@ -30,6 +30,7 @@
     "ember-compatibility-test": "ember try:each"
   },
   "dependencies": {
+    "@embroider/util": "^0.43.5",
     "broccoli-funnel": "^3.0.3",
     "broccoli-merge-trees": "^4.2.0",
     "broccoli-static-site-json": "^4.2.1",
