@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable ember/no-classic-components, ember/no-classic-classes, prettier/prettier, no-console */
 
 import Component from '@ember/component';
 import GlimmerComponent from '@glimmer/component';

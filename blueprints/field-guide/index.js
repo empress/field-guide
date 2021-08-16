@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier, ember/no-string-prototype-extensions */
 'use strict';
 
 const path = require('path')

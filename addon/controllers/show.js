@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier, ember/no-classic-classes */
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 import showdown from 'showdown';

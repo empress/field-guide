@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-classic-components, prettier/prettier, ember/no-classic-classes */
 import Component from '@ember/component';
 import layout from '../templates/components/color-pallet';
 
