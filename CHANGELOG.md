@@ -1,3 +1,8 @@
+2.0.0 / 2021-09-16
+==================
+
+  * breaking: drop support for Ember &lt; 3.16 and update with ember-cli-update #43 from @mansona
+
 1.6.0 / 2021-04-10
 ==================
 
