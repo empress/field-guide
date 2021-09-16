@@ -86,6 +86,9 @@ module.exports = async function () {
       embroiderOptimized(),
       {
         name: 'no-deprecations',
+        env: {
+          RAISE_ON_DEPRECATION: true,
+        },
         npm: {
           devDependencies: {
             'ember-deprecation-error': '*',
@@ -94,6 +97,9 @@ module.exports = async function () {
       },
       {
         name: 'ember-release-no-deprecations',
+        env: {
+          RAISE_ON_DEPRECATION: true,
+        },
         npm: {
           devDependencies: {
             'ember-source': await getChannelURL('release'),
