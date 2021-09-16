@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-computed-properties-in-native-classes, prettier/prettier */
 import HeadDataService from 'ember-meta/services/head-data';
 import { computed } from '@ember/object';
 import config from 'ember-get-config';
@@ -7,9 +8,6 @@ import { getExcerpt, stripHTML } from 'ember-html-excerpt/helpers/excerpt';
 
 export default class CustomHeadDataService extends HeadDataService {
   get config() {
-    console.log({
-      config: config['field-guide']
-    })
     return config['field-guide'];
   }
 

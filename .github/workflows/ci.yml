@@ -9,6 +9,7 @@ on:
   pull_request:
 
 env:
+  NODE_VERSION: 12
   FORCE_COLOR: 1
 
 jobs:
@@ -20,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
+          node-version: ${{ env.NODE_VERSION }}
       - run: npm i -g npm@7
       - run: npm ci
       - run: npm run lint:hbs
@@ -34,11 +35,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
+          node-version: ${{ env.NODE_VERSION }}
       - uses: mansona/npm-lockfile-version@v1
       - run: npm i -g npm@7
       - run: npm ci
-      - run: npm test
+      - run: npm run test:ember
 
   floating-dependencies:
     name: Floating Dependencies
@@ -48,33 +49,39 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
+          node-version: ${{ env.NODE_VERSION }}
       - run: npm i -g npm@7
       - run: npm install --no-package-lock
-      - run: npm test
+      - run: npm run test:ember
 
   try-scenarios:
     name: "ember-try: ${{ matrix.ember-try-scenario }}"
     runs-on: ubuntu-latest
+    timeout-minutes: 7
     needs: test
 
     strategy:
+      fail-fast: false
       matrix:
         ember-try-scenario:
-          - ember-lts-3.4
-          - ember-lts-3.8
-          - ember-lts-3.12
           - ember-lts-3.16
+          - ember-lts-3.20
+          - ember-lts-3.24
           - ember-release
           - ember-beta
+          - ember-canary
           - ember-default-with-jquery
           - ember-classic
+          - embroider-safe
+          - embroider-optimized
+          - no-deprecations
+          - ember-release-no-deprecations
 
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
+          node-version: ${{ env.NODE_VERSION }}
       - run: npm i -g npm@7
       - run: npm ci
       - name: test

@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable ember/no-classic-components, ember/no-classic-classes, prettier/prettier, no-console */
 
 import Component from '@ember/component';
 import GlimmerComponent from '@glimmer/component';
@@ -38,7 +38,7 @@ export default Component.extend({
         compiledTemplate = compileTemplate(templateString);
       } catch (err) {
         console.error(err);
-        console.log(templateString);
+        console.error(templateString);
         compiledTemplate = compileTemplate(`<DynamicTemplateError />`)
       }
 
