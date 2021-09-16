@@ -8,9 +8,6 @@ import { getExcerpt, stripHTML } from 'ember-html-excerpt/helpers/excerpt';
 
 export default class CustomHeadDataService extends HeadDataService {
   get config() {
-    console.log({
-      config: config['field-guide']
-    })
     return config['field-guide'];
   }
 

@@ -38,7 +38,7 @@ export default Component.extend({
         compiledTemplate = compileTemplate(templateString);
       } catch (err) {
         console.error(err);
-        console.log(templateString);
+        console.error(templateString);
         compiledTemplate = compileTemplate(`<DynamicTemplateError />`)
       }
 
