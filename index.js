@@ -83,6 +83,7 @@ module.exports = {
     let docs = new StaticSiteJson('docs', {
       contentFolder: 'docs',
       collate: true,
+      contentTypes: ['content', 'html', 'toc'],
     });
 
     let toc = new TableOfContents(docs, {
