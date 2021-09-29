@@ -1,3 +1,10 @@
+2.1.0 / 2021-09-29
+==================
+
+* move actual dependencies out of devDependencies #48 from @mansona
+* remove console.log #42 from @mansona
+* Update broccoli-static-site-json to add toc to api response #47 from @mansona
+
 2.0.0 / 2021-09-16
 ==================
 
