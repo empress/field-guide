@@ -1,6 +1,6 @@
 {
   "name": "field-guide",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "a fully-functional, static site implementation of a design system documentation site",
   "keywords": [
     "ember-addon",
