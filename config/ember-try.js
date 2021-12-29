@@ -91,8 +91,16 @@ module.exports = async function () {
           },
         },
       },
-      embroiderSafe(),
-      embroiderOptimized(),
+      embroiderSafe({
+        dependencies: {
+          'ember-auto-import': '^2.0.0',
+        },
+      }),
+      embroiderOptimized({
+        dependencies: {
+          'ember-auto-import': '^2.0.0',
+        },
+      }),
       {
         name: 'no-deprecations',
         npm: {
