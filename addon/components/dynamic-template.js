@@ -1,21 +1,15 @@
-/* eslint-disable ember/no-classic-components, ember/no-classic-classes, prettier/prettier, no-console */
-
-import Component from '@ember/component';
-import GlimmerComponent from '@glimmer/component';
-import layout from '../templates/components/dynamic-template';
-
-import { computed } from '@ember/object';
+import { setComponentTemplate } from '@ember/component';
 import { getOwner } from '@ember/application';
 import { compileTemplate } from '@ember/template-compilation';
+
+import Component from '@glimmer/component';
 
 let templateOwnerMap = new Map();
 let templateId = 0;
 
-export default Component.extend({
-  tagName: '',
-  layout,
-  init() {
-    this._super(...arguments);
+export default class DynamicTemplateComponent extends Component {
+  constructor() {
+    super(...arguments);
 
     let owner = getOwner(this);
     let templateMap = templateOwnerMap.get(owner);
@@ -23,13 +17,16 @@ export default Component.extend({
       templateMap = templateOwnerMap.set(owner, new Map());
     }
     this.templateMap = templateMap;
-  },
+  }
 
-  componentName: computed('templateString', 'componentId', function() {
-    let { templateMap, templateString } = this;
-    if (!templateString) { return null; }
+  get component() {
+    let { templateString } = this.args;
+    if (!templateString) {
+      return null;
+    }
 
-    let componentName = templateMap.get(templateString);
+    let componentName = this.templateMap.get(templateString);
+    let component;
     if (componentName === undefined) {
       let owner = getOwner(this);
 
@@ -39,23 +36,22 @@ export default Component.extend({
       } catch (err) {
         console.error(err);
         console.error(templateString);
-        compiledTemplate = compileTemplate(`<DynamicTemplateError />`)
+        compiledTemplate = compileTemplate(`<DynamicTemplateError />`);
       }
 
-      let component = owner.factoryFor(`component:${this.componentId}`);
+      component = owner.factoryFor(`component:${this.args.componentId}`);
 
-      if(!component) {
-        component = class extends GlimmerComponent {};
+      if (!component) {
+        component = class extends Component {};
       } else {
-        component = class extends component.class {}
+        component = class extends component.class {};
       }
 
       componentName = `some-prefix-${templateId++}`;
 
-      owner.register(`component:${componentName}`, component);
-      owner.register(`template:components/${componentName}`, compiledTemplate);
+      setComponentTemplate(compiledTemplate, component);
     }
 
-    return componentName;
-  })
-});
+    return component;
+  }
+}
