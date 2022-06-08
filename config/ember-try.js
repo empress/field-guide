@@ -101,13 +101,17 @@ module.exports = async function () {
         },
       },
       embroiderSafe({
-        dependencies: {
-          'ember-auto-import': '^2.0.0',
+        npm: {
+          dependencies: {
+            'ember-auto-import': '^2.0.0',
+          },
         },
       }),
       embroiderOptimized({
-        dependencies: {
-          'ember-auto-import': '^2.0.0',
+        npm: {
+          dependencies: {
+            'ember-auto-import': '^2.0.0',
+          },
         },
       }),
       {
