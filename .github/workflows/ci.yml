@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 12.x
           cache: npm
-      - run: npm i -g npm@7
+      - run: npm i -g npm@8
       - run: npm ci
       - run: npm run lint
       - run: npm run test:ember
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 12.x
           cache: npm
-      - run: npm i -g npm@7
+      - run: npm i -g npm@8
       - run: npm install --no-shrinkwrap
       - run: npm run test:ember
 
@@ -71,7 +71,7 @@ jobs:
         with:
           node-version: 12.x
           cache: npm
-      - run: npm i -g npm@7
+      - run: npm i -g npm@8
       - run: npm ci
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
