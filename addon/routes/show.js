@@ -12,6 +12,10 @@ export default class ShowRoute extends Route {
     // remove trailing slash
     let path = params.path.replace(/\/$/, '');
 
+    if (path.endsWith('/index')) {
+      return this.router.transitionTo('show', path.replace(/\/index$/, ''));
+    }
+
     // check if there is a path/index in the TOC
     const toc = this.modelFor('application');
 
