@@ -90,9 +90,18 @@ module.exports = {
       subdir: 'docs',
     });
 
+    let backingClasses = new Funnel(
+      'docs',
+      {
+        destDir: 'docs',
+        include: ['**/*.js']
+      }
+    );
+
     return new MergeTrees([
       docs,
       toc,
+      backingClasses
     ]);
   },
 
