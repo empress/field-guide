@@ -1,11 +1,10 @@
 import { setComponentTemplate } from '@ember/component';
 import { getOwner } from '@ember/application';
 import { compileTemplate } from '@ember/template-compilation';
-
+import { importSync } from '@embroider/macros';
 import Component from '@glimmer/component';
 
 let templateOwnerMap = new Map();
-let templateId = 0;
 
 export default class DynamicTemplateComponent extends Component {
   constructor() {
@@ -25,11 +24,8 @@ export default class DynamicTemplateComponent extends Component {
       return null;
     }
 
-    let componentName = this.templateMap.get(templateString);
-    let component;
-    if (componentName === undefined) {
-      let owner = getOwner(this);
-
+    let component = this.templateMap.get(templateString);
+    if (component === undefined) {
       let compiledTemplate;
       try {
         compiledTemplate = compileTemplate(templateString);
@@ -39,17 +35,24 @@ export default class DynamicTemplateComponent extends Component {
         compiledTemplate = compileTemplate(`<DynamicTemplateError />`);
       }
 
-      component = owner.factoryFor(`component:${this.args.componentId}`);
+      let module;
+      try {
+        // eslint-disable-next-line no-undef
+        module = importSync(`/docs/${this.args.componentId}.js`);
+      } catch (err) {
+        // backing class doesn't exist so just ignore the error
+      }
+
+      component = module?.default;
 
       if (!component) {
         component = class extends Component {};
-      } else {
-        component = class extends component.class {};
       }
 
-      componentName = `some-prefix-${templateId++}`;
-
       setComponentTemplate(compiledTemplate, component);
+
+      // eslint-disable-next-line ember/no-side-effects
+      this.templateMap.set(templateString, component);
     }
 
     return component;

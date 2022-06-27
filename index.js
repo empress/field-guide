@@ -27,11 +27,11 @@ module.exports = {
     }
   },
 
-  treeForApp(tree) {
+  treeForAddon(tree) {
     let backingClasses = new Funnel(
       'docs',
       {
-        destDir: 'components',
+        destDir: 'components/docs',
         include: ['**/*.js']
       }
     );

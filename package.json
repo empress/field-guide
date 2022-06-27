@@ -30,7 +30,7 @@
     "ember-compatibility-test": "ember try:each"
   },
   "dependencies": {
-    "@embroider/util": "^1.6.0",
+    "@embroider/macros": "^1.6.0",
     "@glimmer/component": "^1.0.4",
     "broccoli-funnel": "^3.0.3",
     "broccoli-merge-trees": "^4.2.0",
