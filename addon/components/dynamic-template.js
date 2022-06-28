@@ -19,6 +19,8 @@ export default class DynamicTemplateComponent extends Component {
   }
 
   get component() {
+    let owner = getOwner(this);
+
     let { templateString } = this.args;
     if (!templateString) {
       return null;
@@ -35,15 +37,21 @@ export default class DynamicTemplateComponent extends Component {
         compiledTemplate = compileTemplate(`<DynamicTemplateError />`);
       }
 
-      let module;
-      try {
-        // eslint-disable-next-line no-undef
-        module = importSync(`/docs/${this.args.componentId}.js`);
-      } catch (err) {
-        // backing class doesn't exist so just ignore the error
-      }
+      component = owner.factoryFor(`component:${this.args.componentId}`);
 
-      component = module?.default;
+      if (component) {
+        component = class extends component.class {};
+      } else {
+        // if component couldn't be found the old way try importing it directly
+        let module;
+        try {
+          module = importSync(`/docs/${this.args.componentId}.js`);
+        } catch (err) {
+          // backing class doesn't exist so just ignore the error
+        }
+
+        component = module?.default;
+      }
 
       if (!component) {
         component = class extends Component {};
