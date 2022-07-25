@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.24.4",
+    "@embroider/macros": "^1.16.5",
     "@embroider/util": "^1.13.2",
     "@glimmer/component": "^1.1.2",
     "broccoli-funnel": "^3.0.3",
