@@ -48,7 +48,6 @@
     "ember-meta": "^2.0.0",
     "ember-prism": "^0.13.0",
     "empress-blueprint-helpers": "^1.2.1",
-    "innertext": "^1.0.3",
     "resolve": "^1.17.0",
     "walk-sync": "^2.2.0"
   },

@@ -2,7 +2,6 @@
 import HeadDataService from 'ember-meta/services/head-data';
 import { computed } from '@ember/object';
 import config from 'ember-get-config';
-import innertext from 'innertext';
 
 import { getExcerpt, stripHTML } from 'ember-html-excerpt/helpers/excerpt';
 
@@ -22,10 +21,6 @@ export default class CustomHeadDataService extends HeadDataService {
   @computed('config.{name,tagLine}', 'currentRouteMeta.title')
   get siteName() {
     return this.currentRouteMeta?.title ?? `${this.config.name} - ${this.config.tagLine ?? 'Field Guide'}`;
-  }
-
-  get content() {
-    return innertext(this.currentRouteMeta.html);
   }
 
   @computed('currentRouteMeta')

@@ -59,9 +59,6 @@ dependencies:
   empress-blueprint-helpers:
     specifier: ^1.2.1
     version: 1.2.1
-  innertext:
-    specifier: ^1.0.3
-    version: 1.0.3
   resolve:
     specifier: ^1.17.0
     version: 1.22.8
@@ -7669,10 +7666,6 @@ packages:
       whatwg-encoding: 2.0.0
     dev: true
 
-  /html-entities@1.4.0:
-    resolution: {integrity: sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==}
-    dev: false
-
   /html-tags@3.3.1:
     resolution: {integrity: sha512-ztqyC3kLto0e9WbNp0aeP+M3kTt+nbaIveGmUxAtZa+8iFgKLUOD4YKM5j+f3QD89bra7UeumolZHKuOXnTmeQ==}
     engines: {node: '>=8'}
@@ -7896,12 +7889,6 @@ packages:
       sum-up: 1.0.3
       xtend: 4.0.2
     dev: true
-
-  /innertext@1.0.3:
-    resolution: {integrity: sha512-ZC410b7IbrTrmt8bQb27xUOJgXkJu+XL6MVncb9FGyxjRIHyQqNjpSDY20zvSUttkAiYj0dait/67/sXyWvwYg==}
-    dependencies:
-      html-entities: 1.4.0
-    dev: false
 
   /inquirer@6.5.2:
     resolution: {integrity: sha512-cntlB5ghuB0iuO65Ovoi8ogLHiWGs/5yNrtUcKjFhSSiVeAIVpD7koaSU9RM8mpXw5YDi9RdYXGQMaOURB7ycQ==}
