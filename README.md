@@ -70,7 +70,7 @@ let ENV = {
 ```
 
 **Note:**
-- The images like `/ember-logo.png` will need to be in your `public` folder in your addon.
+- The images like `/ember-logo.png` will need to be in your `tests/dummy/public` folder in your addon.
 - You can add as many social links as you want in the `social` array. However, remember to add a logo image in your `public` folder for the custom social links with a name matching the `name` field in your link object. If you are using `field-guide-default-template`, the logos for `github` and `twitter` links will be included by the template for you.
 
 
