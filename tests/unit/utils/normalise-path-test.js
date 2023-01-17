@@ -9,12 +9,12 @@ module('Unit | Utility | normalise-path', function () {
     assert.equal(result, 'concepts/index');
   });
 
-  test('it doent do anything when there is no index', function (assert) {
+  test('it does not do anything when there is no index', function (assert) {
     let result = normalisePath('components', toc);
     assert.equal(result, 'components');
   });
 
-  test('it doent do anything when there is a url that doesnt exist in toc', function (assert) {
+  test('it does not do anything when there is a url that does not exist in toc', function (assert) {
     let result = normalisePath('blah', toc);
     assert.equal(result, 'blah');
   });
