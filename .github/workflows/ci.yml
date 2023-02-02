@@ -15,63 +15,71 @@ jobs:
   test:
     name: "Tests"
     runs-on: ubuntu-latest
+    timeout-minutes: 7
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: mansona/npm-lockfile-version@v1
-      - uses: actions/setup-node@v2
+      - name: Install Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 14.x
           cache: npm
       - run: npm i -g npm@7
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run test:ember
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Run Tests
+        run: npm run test:ember
 
   floating:
     name: "Floating Dependencies"
     runs-on: ubuntu-latest
+    timeout-minutes: 7
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 14.x
           cache: npm
       - run: npm i -g npm@7
-      - run: npm install --no-shrinkwrap
-      - run: npm run test:ember
+      - name: Install Dependencies
+        run: npm install --no-shrinkwrap
+      - name: Run Tests
+        run: npm run test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
     runs-on: ubuntu-latest
+    needs: "test"
     timeout-minutes: 7
-    needs: 'test'
 
     strategy:
       fail-fast: false
       matrix:
         try-scenario:
-          - ember-lts-3.16
-          - ember-lts-3.20
-          - ember-lts-3.24
+          - ember-lts-3.28
+          - ember-lts-4.4
           - ember-release
           - ember-beta
           - ember-canary
           - ember-classic
-          - ember-default-with-jquery
           - embroider-safe
           - embroider-optimized
           - no-deprecations
           - ember-release-no-deprecations
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - name: Install Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 14.x
           cache: npm
       - run: npm i -g npm@7
-      - run: npm ci
+      - name: Install Dependencies
+        run: npm ci
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
