@@ -1,5 +1,4 @@
-Field Guide
-==============================================================================
+# Field Guide
 
 This project is designed to be a fully-functional, static site implementation of a design system (or styleguide) documentation site. It is intended to be installed in your Ember Addon and then can be deployed statically on AWS, Netlify or any other static site deployment system.
 
@@ -7,16 +6,15 @@ If you want an example of the this "in production" then check out the new [redes
 
 You do not need to be a web **developer** to be able to use this system. You just write markdown files and the rest of the work is performed by EmberJS' build system.
 
-Super Quick Start
-------------------------------------------------------------------------------
+## Super Quick Start
+
 If you want to get your new Field Guide deployed on [Netlify](https://www.netlify.com/) in less than a minute then you can just click this button:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/empress/field-guide-netlify-default-template)
 
 If you want to instead work with your Field Guide locally before deploying then you can continue reading
 
-Quick Start
-------------------------------------------------------------------------------
+## Quick Start
 
 ```sh
 npm init ember-addon super-design-system
@@ -40,8 +38,7 @@ npx ember build -prod
 This will generate a fully static output of your site in the `dist` folder.
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 ### Configuring
 
@@ -74,13 +71,11 @@ let ENV = {
 - You can add as many social links as you want in the `social` array. However, remember to add a logo image in your `public` folder for the custom social links with a name matching the `name` field in your link object. If you are using `field-guide-default-template`, the logos for `github` and `twitter` links will be included by the template for you.
 
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
