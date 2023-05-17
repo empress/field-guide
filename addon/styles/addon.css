@@ -9,7 +9,9 @@ div.field-guide-color-pallet {
 }
 
 .field-guide-color-pallet .color-pallet__example-text-row {
-  padding: .5rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .field-guide-color-pallet .color-pallet__example-text {
@@ -25,7 +27,7 @@ div.field-guide-color-pallet {
   border-radius: 4px;
   line-height: 1rem;
   display: inline-block;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .field-guide-color-pallet .color-pallet__details {
@@ -43,12 +45,6 @@ div.field-guide-color-pallet {
 
 .field-guide-color-pallet dd {
   margin: 0;
-}
-
-
-.field-guide-color-pallet .color-pallet__example-text-row {
-  display: flex;
-  justify-content: space-around;
 }
 
 .field-guide-color-pallet .color-pallet__example-text-result {
