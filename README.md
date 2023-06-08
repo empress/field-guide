@@ -16,6 +16,8 @@ If you want to instead work with your Field Guide locally before deploying then 
 
 ## Quick Start
 
+Note: this should be done on a fresh dummy app (one without any changes to it yet; see [this related issue](https://github.com/empress/field-guide/issues/44)).
+
 ```sh
 npm init ember-addon super-design-system
 
