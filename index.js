@@ -53,6 +53,7 @@ module.exports = {
           'http',
           'javascript',
           'json',
+          'markup',
           'markup-templating',
           'ruby',
           'scss'

@@ -58,7 +58,7 @@ export function initialize(/* application */) {
 
         let preBlock = `<pre class="language-${language}"><code ${language ? `class="${language} language-${language}"` : ''}>${highlightedCodeBlock}</code></pre>`;
 
-        let autoExecuteLanguages = fieldGuideConfig.autoExecuteLanguages || ['html', 'handlebars', 'hbs'];
+        let autoExecuteLanguages = fieldGuideConfig.autoExecuteLanguages || ['html', 'handlebars', 'hbs', 'glimmer'];
 
         let selfExecutingBlock = `<div class="self-executing-code-block">
   <div class="example">
