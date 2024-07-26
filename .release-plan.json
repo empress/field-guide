@@ -1,0 +1,33 @@
+{
+  "solution": {
+    "field-guide": {
+      "impact": "major",
+      "oldVersion": "2.4.0",
+      "newVersion": "3.0.0",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        },
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :memo: Documentation"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2024-07-26)\n\nfield-guide 3.0.0 (major)\n\n#### :boom: Breaking Change\n* `field-guide`\n  * [#101](https://github.com/empress/field-guide/pull/101) Update dependencies, start using pnpm, and drop support for ember-auto-import@1 ([@mansona](https://github.com/mansona))\n\n#### :rocket: Enhancement\n* `field-guide`\n  * [#82](https://github.com/empress/field-guide/pull/82) Complete ember-auto-import v2 Upgrade ([@elwayman02](https://github.com/elwayman02))\n  * [#84](https://github.com/empress/field-guide/pull/84) Ember Blueprint Updates ([@elwayman02](https://github.com/elwayman02))\n\n#### :bug: Bug Fix\n* `field-guide`\n  * [#72](https://github.com/empress/field-guide/pull/72) ember-fetch 8.1.2 ([@Dhaulagiri](https://github.com/Dhaulagiri))\n  * [#81](https://github.com/empress/field-guide/pull/81) Update normalise-path-test.js ([@MelSumner](https://github.com/MelSumner))\n\n#### :memo: Documentation\n* `field-guide`\n  * [#74](https://github.com/empress/field-guide/pull/74) Update README.md ([@MinThaMie](https://github.com/MinThaMie))\n\n#### :house: Internal\n* `field-guide`\n  * [#102](https://github.com/empress/field-guide/pull/102) setup release-plan ([@mansona](https://github.com/mansona))\n  * [#92](https://github.com/empress/field-guide/pull/92) Ember 4.4 ([@elwayman02](https://github.com/elwayman02))\n  * [#90](https://github.com/empress/field-guide/pull/90) NPM audit fix ([@elwayman02](https://github.com/elwayman02))\n\n#### Committers: 5\n- Anne-Greeth Schot-van Herwijnen ([@MinThaMie](https://github.com/MinThaMie))\n- Brian Runnells ([@Dhaulagiri](https://github.com/Dhaulagiri))\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Jordan Hawker ([@elwayman02](https://github.com/elwayman02))\n- Melanie Sumner ([@MelSumner](https://github.com/MelSumner))\n"
+}

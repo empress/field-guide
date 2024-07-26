@@ -1,5 +1,40 @@
 # Changelog
 
+## Release (2024-07-26)
+
+field-guide 3.0.0 (major)
+
+#### :boom: Breaking Change
+* `field-guide`
+  * [#101](https://github.com/empress/field-guide/pull/101) Update dependencies, start using pnpm, and drop support for ember-auto-import@1 ([@mansona](https://github.com/mansona))
+
+#### :rocket: Enhancement
+* `field-guide`
+  * [#82](https://github.com/empress/field-guide/pull/82) Complete ember-auto-import v2 Upgrade ([@elwayman02](https://github.com/elwayman02))
+  * [#84](https://github.com/empress/field-guide/pull/84) Ember Blueprint Updates ([@elwayman02](https://github.com/elwayman02))
+
+#### :bug: Bug Fix
+* `field-guide`
+  * [#72](https://github.com/empress/field-guide/pull/72) ember-fetch 8.1.2 ([@Dhaulagiri](https://github.com/Dhaulagiri))
+  * [#81](https://github.com/empress/field-guide/pull/81) Update normalise-path-test.js ([@MelSumner](https://github.com/MelSumner))
+
+#### :memo: Documentation
+* `field-guide`
+  * [#74](https://github.com/empress/field-guide/pull/74) Update README.md ([@MinThaMie](https://github.com/MinThaMie))
+
+#### :house: Internal
+* `field-guide`
+  * [#102](https://github.com/empress/field-guide/pull/102) setup release-plan ([@mansona](https://github.com/mansona))
+  * [#92](https://github.com/empress/field-guide/pull/92) Ember 4.4 ([@elwayman02](https://github.com/elwayman02))
+  * [#90](https://github.com/empress/field-guide/pull/90) NPM audit fix ([@elwayman02](https://github.com/elwayman02))
+
+#### Committers: 5
+- Anne-Greeth Schot-van Herwijnen ([@MinThaMie](https://github.com/MinThaMie))
+- Brian Runnells ([@Dhaulagiri](https://github.com/Dhaulagiri))
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Jordan Hawker ([@elwayman02](https://github.com/elwayman02))
+- Melanie Sumner ([@MelSumner](https://github.com/MelSumner))
+
 2.4.0 / 2022-06-17
 ==================
 
