@@ -2,7 +2,7 @@
 import { module, test } from 'qunit';
 import { visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
-import config from '../../config/environment';
+import config from 'ember-get-config';
 
 let originalConfig;
 

@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.24.4",
+    "@embroider/macros": "^1.16.5",
     "@embroider/util": "^1.13.2",
     "@glimmer/component": "^1.1.2",
     "broccoli-funnel": "^3.0.3",
@@ -46,7 +47,6 @@
     "ember-meta": "^2.0.0",
     "ember-prism": "^0.13.0",
     "empress-blueprint-helpers": "^1.2.1",
-    "innertext": "^1.0.3",
     "resolve": "^1.17.0",
     "walk-sync": "^2.2.0"
   },
