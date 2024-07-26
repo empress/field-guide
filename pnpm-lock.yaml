@@ -45,8 +45,8 @@ dependencies:
     specifier: ^0.3.0
     version: 0.3.0
   ember-html-excerpt:
-    specifier: ^1.0.0
-    version: 1.0.0(@babel/core@7.24.9)
+    specifier: ^1.0.1
+    version: 1.0.1(@babel/core@7.24.9)
   ember-meta:
     specifier: ^2.0.0
     version: 2.0.0
@@ -5655,8 +5655,8 @@ packages:
       - supports-color
     dev: false
 
-  /ember-html-excerpt@1.0.0(@babel/core@7.24.9):
-    resolution: {integrity: sha512-feWBaQ2VMyTnyY4myneo+KnNPGxmMqulfn0qgXZQSF5EfLAJokAHZArWmz4yxQ91l4tR8SdVcoDLxEkd4Cqdyg==}
+  /ember-html-excerpt@1.0.1(@babel/core@7.24.9):
+    resolution: {integrity: sha512-Q0SAmzfReFYzPUdQQ4tqA69jB8H2HwdtO/Z1wheOT44UXfSXvBCIL+XABiXcVvQB2BT7Qb7lIOEO8CcV/4DK+Q==}
     dependencies:
       '@embroider/addon-shim': 1.8.9
       decorator-transforms: 2.0.0(@babel/core@7.24.9)
