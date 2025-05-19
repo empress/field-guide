@@ -14,7 +14,9 @@ languages for your code blocks they will become "self-executing"
 
 ```html
 <h2>The demo</h2>
-<p>you will see what this looks like and then the code that created it underneath</p>
+<p>
+  you will see what this looks like and then the code that created it underneath
+</p>
 ```
 
 If you look at the source for this file you will see that you didn't need to
@@ -25,15 +27,21 @@ documentation.
 ```handlebars
 <h2>The Ember Demo</h2>
 
-<p>you can use HTML here too because it is valid Ember! but you can also use components: </p>
+<p>you can use HTML here too because it is valid Ember! but you can also use
+  components:
+</p>
 
 <ColorPallet
   @color="#E04E39"
   @name="Brand"
   @variable="--color-brand"
   @class-name="bg-brand"
-  @textClasses={{array 'field-guide-small' 'field-guide-medium' 'field-guide-large'}}
-  @textColorClasses={{array 'field-guide-default' 'field-guide-white'}}
+  @textClasses={{array
+    "field-guide-small"
+    "field-guide-medium"
+    "field-guide-large"
+  }}
+  @textColorClasses={{array "field-guide-default" "field-guide-white"}}
 />
 ```
 

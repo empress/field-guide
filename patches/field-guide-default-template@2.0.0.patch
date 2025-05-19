@@ -1,0 +1,13 @@
+diff --git a/addon/templates/application.hbs b/addon/templates/application.hbs
+index cd247d15720e3c49e4fb934e66bd094072b396ac..ab1b03c9cc0d92f07d60373f8d29eb9acd116b76 100644
+--- a/addon/templates/application.hbs
++++ b/addon/templates/application.hbs
+@@ -23,7 +23,7 @@
+   <div class="field-guide-wrapper-full-height">
+     <main>
+       {{outlet}}
+-      <button class="field-guide-show-sidenav" {{action (mut this.showSideNav) (not this.showSideNav)}}>
++      <button class="field-guide-show-sidenav" {{on "click" this.toggleSideNav}}>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="25">
+           <path d="M4 10h24a2 2 0 0 0 0-4H4a2 2 0 0 0 0 4zm24 4H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4zm0 8H4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4z"/>
+         </svg>

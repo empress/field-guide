@@ -1,0 +1,5 @@
+<template>
+  <h1> Error Rendering your Dynamic Template </h1>
+
+  <p>Check the console to see the details of the error</p>
+</template>

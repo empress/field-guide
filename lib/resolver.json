@@ -1,0 +1,461 @@
+{
+  "renamePackages": {
+    "live-reload-middleware": "ember-cli-inject-live-reload"
+  },
+  "renameModules": {
+    "@ember/-internals/browser-environment/index.js": "ember-source/@ember/-internals/browser-environment/index.js",
+    "@ember/-internals/container/index.js": "ember-source/@ember/-internals/container/index.js",
+    "@ember/-internals/deprecations/index.js": "ember-source/@ember/-internals/deprecations/index.js",
+    "@ember/-internals/environment/index.js": "ember-source/@ember/-internals/environment/index.js",
+    "@ember/-internals/error-handling/index.js": "ember-source/@ember/-internals/error-handling/index.js",
+    "@ember/-internals/glimmer/index.js": "ember-source/@ember/-internals/glimmer/index.js",
+    "@ember/-internals/meta/index.js": "ember-source/@ember/-internals/meta/index.js",
+    "@ember/-internals/meta/lib/meta.js": "ember-source/@ember/-internals/meta/lib/meta.js",
+    "@ember/-internals/metal/index.js": "ember-source/@ember/-internals/metal/index.js",
+    "@ember/-internals/owner/index.js": "ember-source/@ember/-internals/owner/index.js",
+    "@ember/-internals/routing/index.js": "ember-source/@ember/-internals/routing/index.js",
+    "@ember/-internals/runtime/index.js": "ember-source/@ember/-internals/runtime/index.js",
+    "@ember/-internals/runtime/lib/ext/rsvp.js": "ember-source/@ember/-internals/runtime/lib/ext/rsvp.js",
+    "@ember/-internals/runtime/lib/mixins/-proxy.js": "ember-source/@ember/-internals/runtime/lib/mixins/-proxy.js",
+    "@ember/-internals/runtime/lib/mixins/action_handler.js": "ember-source/@ember/-internals/runtime/lib/mixins/action_handler.js",
+    "@ember/-internals/runtime/lib/mixins/comparable.js": "ember-source/@ember/-internals/runtime/lib/mixins/comparable.js",
+    "@ember/-internals/runtime/lib/mixins/container_proxy.js": "ember-source/@ember/-internals/runtime/lib/mixins/container_proxy.js",
+    "@ember/-internals/runtime/lib/mixins/registry_proxy.js": "ember-source/@ember/-internals/runtime/lib/mixins/registry_proxy.js",
+    "@ember/-internals/runtime/lib/mixins/target_action_support.js": "ember-source/@ember/-internals/runtime/lib/mixins/target_action_support.js",
+    "@ember/-internals/string/index.js": "ember-source/@ember/-internals/string/index.js",
+    "@ember/-internals/utility-types/index.js": "ember-source/@ember/-internals/utility-types/index.js",
+    "@ember/-internals/utils/index.js": "ember-source/@ember/-internals/utils/index.js",
+    "@ember/-internals/views/index.js": "ember-source/@ember/-internals/views/index.js",
+    "@ember/-internals/views/lib/compat/attrs.js": "ember-source/@ember/-internals/views/lib/compat/attrs.js",
+    "@ember/-internals/views/lib/compat/fallback-view-registry.js": "ember-source/@ember/-internals/views/lib/compat/fallback-view-registry.js",
+    "@ember/-internals/views/lib/component_lookup.js": "ember-source/@ember/-internals/views/lib/component_lookup.js",
+    "@ember/-internals/views/lib/mixins/action_support.js": "ember-source/@ember/-internals/views/lib/mixins/action_support.js",
+    "@ember/-internals/views/lib/mixins/child_views_support.js": "ember-source/@ember/-internals/views/lib/mixins/child_views_support.js",
+    "@ember/-internals/views/lib/mixins/class_names_support.js": "ember-source/@ember/-internals/views/lib/mixins/class_names_support.js",
+    "@ember/-internals/views/lib/mixins/view_state_support.js": "ember-source/@ember/-internals/views/lib/mixins/view_state_support.js",
+    "@ember/-internals/views/lib/mixins/view_support.js": "ember-source/@ember/-internals/views/lib/mixins/view_support.js",
+    "@ember/-internals/views/lib/system/action_manager.js": "ember-source/@ember/-internals/views/lib/system/action_manager.js",
+    "@ember/-internals/views/lib/system/event_dispatcher.js": "ember-source/@ember/-internals/views/lib/system/event_dispatcher.js",
+    "@ember/-internals/views/lib/system/utils.js": "ember-source/@ember/-internals/views/lib/system/utils.js",
+    "@ember/-internals/views/lib/views/core_view.js": "ember-source/@ember/-internals/views/lib/views/core_view.js",
+    "@ember/-internals/views/lib/views/states.js": "ember-source/@ember/-internals/views/lib/views/states.js",
+    "@ember/application/index.js": "ember-source/@ember/application/index.js",
+    "@ember/application/instance.js": "ember-source/@ember/application/instance.js",
+    "@ember/application/lib/lazy_load.js": "ember-source/@ember/application/lib/lazy_load.js",
+    "@ember/application/namespace.js": "ember-source/@ember/application/namespace.js",
+    "@ember/array/-internals.js": "ember-source/@ember/array/-internals.js",
+    "@ember/array/index.js": "ember-source/@ember/array/index.js",
+    "@ember/array/lib/make-array.js": "ember-source/@ember/array/lib/make-array.js",
+    "@ember/array/make.js": "ember-source/@ember/array/make.js",
+    "@ember/array/mutable.js": "ember-source/@ember/array/mutable.js",
+    "@ember/array/proxy.js": "ember-source/@ember/array/proxy.js",
+    "@ember/canary-features/index.js": "ember-source/@ember/canary-features/index.js",
+    "@ember/component/helper.js": "ember-source/@ember/component/helper.js",
+    "@ember/component/index.js": "ember-source/@ember/component/index.js",
+    "@ember/component/template-only.js": "ember-source/@ember/component/template-only.js",
+    "@ember/controller/index.js": "ember-source/@ember/controller/index.js",
+    "@ember/debug/container-debug-adapter.js": "ember-source/@ember/debug/container-debug-adapter.js",
+    "@ember/debug/data-adapter.js": "ember-source/@ember/debug/data-adapter.js",
+    "@ember/debug/index.js": "ember-source/@ember/debug/index.js",
+    "@ember/debug/lib/assert.js": "ember-source/@ember/debug/lib/assert.js",
+    "@ember/debug/lib/capture-render-tree.js": "ember-source/@ember/debug/lib/capture-render-tree.js",
+    "@ember/debug/lib/deprecate.js": "ember-source/@ember/debug/lib/deprecate.js",
+    "@ember/debug/lib/handlers.js": "ember-source/@ember/debug/lib/handlers.js",
+    "@ember/debug/lib/inspect.js": "ember-source/@ember/debug/lib/inspect.js",
+    "@ember/debug/lib/testing.js": "ember-source/@ember/debug/lib/testing.js",
+    "@ember/debug/lib/warn.js": "ember-source/@ember/debug/lib/warn.js",
+    "@ember/deprecated-features/index.js": "ember-source/@ember/deprecated-features/index.js",
+    "@ember/destroyable/index.js": "ember-source/@ember/destroyable/index.js",
+    "@ember/engine/index.js": "ember-source/@ember/engine/index.js",
+    "@ember/engine/instance.js": "ember-source/@ember/engine/instance.js",
+    "@ember/engine/lib/engine-parent.js": "ember-source/@ember/engine/lib/engine-parent.js",
+    "@ember/engine/parent.js": "ember-source/@ember/engine/parent.js",
+    "@ember/enumerable/index.js": "ember-source/@ember/enumerable/index.js",
+    "@ember/enumerable/mutable.js": "ember-source/@ember/enumerable/mutable.js",
+    "@ember/helper/index.js": "ember-source/@ember/helper/index.js",
+    "@ember/instrumentation/index.js": "ember-source/@ember/instrumentation/index.js",
+    "@ember/modifier/index.js": "ember-source/@ember/modifier/index.js",
+    "@ember/modifier/on.js": "ember-source/@ember/modifier/on.js",
+    "@ember/object/-internals.js": "ember-source/@ember/object/-internals.js",
+    "@ember/object/compat.js": "ember-source/@ember/object/compat.js",
+    "@ember/object/computed.js": "ember-source/@ember/object/computed.js",
+    "@ember/object/core.js": "ember-source/@ember/object/core.js",
+    "@ember/object/evented.js": "ember-source/@ember/object/evented.js",
+    "@ember/object/events.js": "ember-source/@ember/object/events.js",
+    "@ember/object/index.js": "ember-source/@ember/object/index.js",
+    "@ember/object/internals.js": "ember-source/@ember/object/internals.js",
+    "@ember/object/lib/computed/computed_macros.js": "ember-source/@ember/object/lib/computed/computed_macros.js",
+    "@ember/object/lib/computed/reduce_computed_macros.js": "ember-source/@ember/object/lib/computed/reduce_computed_macros.js",
+    "@ember/object/mixin.js": "ember-source/@ember/object/mixin.js",
+    "@ember/object/observable.js": "ember-source/@ember/object/observable.js",
+    "@ember/object/observers.js": "ember-source/@ember/object/observers.js",
+    "@ember/object/promise-proxy-mixin.js": "ember-source/@ember/object/promise-proxy-mixin.js",
+    "@ember/object/proxy.js": "ember-source/@ember/object/proxy.js",
+    "@ember/owner/index.js": "ember-source/@ember/owner/index.js",
+    "@ember/renderer/index.js": "ember-source/@ember/renderer/index.js",
+    "@ember/routing/-internals.js": "ember-source/@ember/routing/-internals.js",
+    "@ember/routing/hash-location.js": "ember-source/@ember/routing/hash-location.js",
+    "@ember/routing/history-location.js": "ember-source/@ember/routing/history-location.js",
+    "@ember/routing/index.js": "ember-source/@ember/routing/index.js",
+    "@ember/routing/lib/cache.js": "ember-source/@ember/routing/lib/cache.js",
+    "@ember/routing/lib/controller_for.js": "ember-source/@ember/routing/lib/controller_for.js",
+    "@ember/routing/lib/dsl.js": "ember-source/@ember/routing/lib/dsl.js",
+    "@ember/routing/lib/generate_controller.js": "ember-source/@ember/routing/lib/generate_controller.js",
+    "@ember/routing/lib/location-utils.js": "ember-source/@ember/routing/lib/location-utils.js",
+    "@ember/routing/lib/query_params.js": "ember-source/@ember/routing/lib/query_params.js",
+    "@ember/routing/lib/router_state.js": "ember-source/@ember/routing/lib/router_state.js",
+    "@ember/routing/lib/routing-service.js": "ember-source/@ember/routing/lib/routing-service.js",
+    "@ember/routing/lib/utils.js": "ember-source/@ember/routing/lib/utils.js",
+    "@ember/routing/none-location.js": "ember-source/@ember/routing/none-location.js",
+    "@ember/routing/route.js": "ember-source/@ember/routing/route.js",
+    "@ember/routing/router-service.js": "ember-source/@ember/routing/router-service.js",
+    "@ember/routing/router.js": "ember-source/@ember/routing/router.js",
+    "@ember/runloop/index.js": "ember-source/@ember/runloop/index.js",
+    "@ember/service/index.js": "ember-source/@ember/service/index.js",
+    "@ember/template-compilation/index.js": "ember-source/@ember/template-compilation/index.js",
+    "@ember/template-compiler/-internal-primitives.js": "ember-source/@ember/template-compiler/-internal-primitives.js",
+    "@ember/template-compiler/-internal-utils.js": "ember-source/@ember/template-compiler/-internal-utils.js",
+    "@ember/template-compiler/index.js": "ember-source/@ember/template-compiler/index.js",
+    "@ember/template-compiler/lib/-internal/primitives.js": "ember-source/@ember/template-compiler/lib/-internal/primitives.js",
+    "@ember/template-compiler/lib/compile-options.js": "ember-source/@ember/template-compiler/lib/compile-options.js",
+    "@ember/template-compiler/lib/dasherize-component-name.js": "ember-source/@ember/template-compiler/lib/dasherize-component-name.js",
+    "@ember/template-compiler/lib/plugins/assert-against-attrs.js": "ember-source/@ember/template-compiler/lib/plugins/assert-against-attrs.js",
+    "@ember/template-compiler/lib/plugins/assert-against-named-outlets.js": "ember-source/@ember/template-compiler/lib/plugins/assert-against-named-outlets.js",
+    "@ember/template-compiler/lib/plugins/assert-input-helper-without-block.js": "ember-source/@ember/template-compiler/lib/plugins/assert-input-helper-without-block.js",
+    "@ember/template-compiler/lib/plugins/assert-reserved-named-arguments.js": "ember-source/@ember/template-compiler/lib/plugins/assert-reserved-named-arguments.js",
+    "@ember/template-compiler/lib/plugins/index.js": "ember-source/@ember/template-compiler/lib/plugins/index.js",
+    "@ember/template-compiler/lib/plugins/transform-action-syntax.js": "ember-source/@ember/template-compiler/lib/plugins/transform-action-syntax.js",
+    "@ember/template-compiler/lib/plugins/transform-each-in-into-each.js": "ember-source/@ember/template-compiler/lib/plugins/transform-each-in-into-each.js",
+    "@ember/template-compiler/lib/plugins/transform-each-track-array.js": "ember-source/@ember/template-compiler/lib/plugins/transform-each-track-array.js",
+    "@ember/template-compiler/lib/plugins/transform-in-element.js": "ember-source/@ember/template-compiler/lib/plugins/transform-in-element.js",
+    "@ember/template-compiler/lib/plugins/transform-quoted-bindings-into-just-bindings.js": "ember-source/@ember/template-compiler/lib/plugins/transform-quoted-bindings-into-just-bindings.js",
+    "@ember/template-compiler/lib/plugins/transform-resolutions.js": "ember-source/@ember/template-compiler/lib/plugins/transform-resolutions.js",
+    "@ember/template-compiler/lib/plugins/transform-wrap-mount-and-outlet.js": "ember-source/@ember/template-compiler/lib/plugins/transform-wrap-mount-and-outlet.js",
+    "@ember/template-compiler/lib/plugins/utils.js": "ember-source/@ember/template-compiler/lib/plugins/utils.js",
+    "@ember/template-compiler/lib/public-api.js": "ember-source/@ember/template-compiler/lib/public-api.js",
+    "@ember/template-compiler/lib/runtime.js": "ember-source/@ember/template-compiler/lib/runtime.js",
+    "@ember/template-compiler/lib/system/calculate-location-display.js": "ember-source/@ember/template-compiler/lib/system/calculate-location-display.js",
+    "@ember/template-compiler/lib/template.js": "ember-source/@ember/template-compiler/lib/template.js",
+    "@ember/template-compiler/runtime.js": "ember-source/@ember/template-compiler/runtime.js",
+    "@ember/template-factory/index.js": "ember-source/@ember/template-factory/index.js",
+    "@ember/template/index.js": "ember-source/@ember/template/index.js",
+    "@ember/test/adapter.js": "ember-source/@ember/test/adapter.js",
+    "@ember/test/index.js": "ember-source/@ember/test/index.js",
+    "@ember/utils/index.js": "ember-source/@ember/utils/index.js",
+    "@ember/utils/lib/compare.js": "ember-source/@ember/utils/lib/compare.js",
+    "@ember/utils/lib/is-equal.js": "ember-source/@ember/utils/lib/is-equal.js",
+    "@ember/utils/lib/is_blank.js": "ember-source/@ember/utils/lib/is_blank.js",
+    "@ember/utils/lib/is_empty.js": "ember-source/@ember/utils/lib/is_empty.js",
+    "@ember/utils/lib/is_none.js": "ember-source/@ember/utils/lib/is_none.js",
+    "@ember/utils/lib/is_present.js": "ember-source/@ember/utils/lib/is_present.js",
+    "@ember/utils/lib/type-of.js": "ember-source/@ember/utils/lib/type-of.js",
+    "@ember/version/index.js": "ember-source/@ember/version/index.js",
+    "@glimmer/destroyable/index.js": "ember-source/@glimmer/destroyable/index.js",
+    "@glimmer/encoder/index.js": "ember-source/@glimmer/encoder/index.js",
+    "@glimmer/env/index.js": "ember-source/@glimmer/env/index.js",
+    "@glimmer/global-context/index.js": "ember-source/@glimmer/global-context/index.js",
+    "@glimmer/manager/index.js": "ember-source/@glimmer/manager/index.js",
+    "@glimmer/node/index.js": "ember-source/@glimmer/node/index.js",
+    "@glimmer/opcode-compiler/index.js": "ember-source/@glimmer/opcode-compiler/index.js",
+    "@glimmer/owner/index.js": "ember-source/@glimmer/owner/index.js",
+    "@glimmer/program/index.js": "ember-source/@glimmer/program/index.js",
+    "@glimmer/reference/index.js": "ember-source/@glimmer/reference/index.js",
+    "@glimmer/runtime/index.js": "ember-source/@glimmer/runtime/index.js",
+    "@glimmer/tracking/index.js": "ember-source/@glimmer/tracking/index.js",
+    "@glimmer/tracking/primitives/cache.js": "ember-source/@glimmer/tracking/primitives/cache.js",
+    "@glimmer/util/index.js": "ember-source/@glimmer/util/index.js",
+    "@glimmer/validator/index.js": "ember-source/@glimmer/validator/index.js",
+    "@glimmer/vm/index.js": "ember-source/@glimmer/vm/index.js",
+    "@glimmer/wire-format/index.js": "ember-source/@glimmer/wire-format/index.js",
+    "@simple-dom/document/index.js": "ember-source/@simple-dom/document/index.js",
+    "backburner.js/index.js": "ember-source/backburner.js/index.js",
+    "dag-map/index.js": "ember-source/dag-map/index.js",
+    "ember-testing/index.js": "ember-source/ember-testing/index.js",
+    "ember-testing/lib/adapters/adapter.js": "ember-source/ember-testing/lib/adapters/adapter.js",
+    "ember-testing/lib/adapters/qunit.js": "ember-source/ember-testing/lib/adapters/qunit.js",
+    "ember-testing/lib/ext/application.js": "ember-source/ember-testing/lib/ext/application.js",
+    "ember-testing/lib/ext/rsvp.js": "ember-source/ember-testing/lib/ext/rsvp.js",
+    "ember-testing/lib/helpers.js": "ember-source/ember-testing/lib/helpers.js",
+    "ember-testing/lib/helpers/and_then.js": "ember-source/ember-testing/lib/helpers/and_then.js",
+    "ember-testing/lib/helpers/current_path.js": "ember-source/ember-testing/lib/helpers/current_path.js",
+    "ember-testing/lib/helpers/current_route_name.js": "ember-source/ember-testing/lib/helpers/current_route_name.js",
+    "ember-testing/lib/helpers/current_url.js": "ember-source/ember-testing/lib/helpers/current_url.js",
+    "ember-testing/lib/helpers/pause_test.js": "ember-source/ember-testing/lib/helpers/pause_test.js",
+    "ember-testing/lib/helpers/visit.js": "ember-source/ember-testing/lib/helpers/visit.js",
+    "ember-testing/lib/helpers/wait.js": "ember-source/ember-testing/lib/helpers/wait.js",
+    "ember-testing/lib/initializers.js": "ember-source/ember-testing/lib/initializers.js",
+    "ember-testing/lib/public-api.js": "ember-source/ember-testing/lib/public-api.js",
+    "ember-testing/lib/setup_for_testing.js": "ember-source/ember-testing/lib/setup_for_testing.js",
+    "ember-testing/lib/test.js": "ember-source/ember-testing/lib/test.js",
+    "ember-testing/lib/test/adapter.js": "ember-source/ember-testing/lib/test/adapter.js",
+    "ember-testing/lib/test/helpers.js": "ember-source/ember-testing/lib/test/helpers.js",
+    "ember-testing/lib/test/on_inject_helpers.js": "ember-source/ember-testing/lib/test/on_inject_helpers.js",
+    "ember-testing/lib/test/pending_requests.js": "ember-source/ember-testing/lib/test/pending_requests.js",
+    "ember-testing/lib/test/promise.js": "ember-source/ember-testing/lib/test/promise.js",
+    "ember-testing/lib/test/run.js": "ember-source/ember-testing/lib/test/run.js",
+    "ember-testing/lib/test/waiters.js": "ember-source/ember-testing/lib/test/waiters.js",
+    "ember/barrel.js": "ember-source/ember/barrel.js",
+    "ember/index.js": "ember-source/ember/index.js",
+    "ember/version.js": "ember-source/ember/version.js",
+    "route-recognizer/index.js": "ember-source/route-recognizer/index.js",
+    "router_js/index.js": "ember-source/router_js/index.js",
+    "rsvp/index.js": "ember-source/rsvp/index.js",
+    "ember-test-waiters/index.js": "@ember/test-waiters/ember-test-waiters/index.js"
+  },
+  "resolvableExtensions": [
+    ".mjs",
+    ".gjs",
+    ".js",
+    ".mts",
+    ".gts",
+    ".ts",
+    ".hbs",
+    ".hbs.js",
+    ".json"
+  ],
+  "appRoot": "/Users/mansona/git/opensource/empress/field-guide/field-guide",
+  "engines": [
+    {
+      "packageName": "field-guide",
+      "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide",
+      "fastbootFiles": {},
+      "activeAddons": [
+        {
+          "name": "ember-prism",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-prism.a079c71e/node_modules/ember-prism",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-node-assets",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-node-assets.9c8f1d74/node_modules/ember-cli-node-assets",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-prism.a079c71e/node_modules/ember-prism/package.json"
+        },
+        {
+          "name": "@ember/render-modifiers",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/render-modifiers.e0413296/node_modules/@ember/render-modifiers",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-prism.a079c71e/node_modules/ember-prism/package.json"
+        },
+        {
+          "name": "ember-modifier-manager-polyfill",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-modifier-manager-polyfill.5b9fb6bb/node_modules/ember-modifier-manager-polyfill",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/render-modifiers.e0413296/node_modules/@ember/render-modifiers/package.json"
+        },
+        {
+          "name": "ember-meta",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-meta.5fcb0b1c/node_modules/ember-meta",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-truth-helpers",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-truth-helpers.78d9e650/node_modules/ember-truth-helpers",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-meta.5fcb0b1c/node_modules/ember-meta/package.json"
+        },
+        {
+          "name": "ember-cli-head",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-head.2b55f5ca/node_modules/ember-cli-head",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-meta.5fcb0b1c/node_modules/ember-meta/package.json"
+        },
+        {
+          "name": "ember-in-element-polyfill",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-in-element-polyfill.47dc843e/node_modules/ember-in-element-polyfill",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-head.2b55f5ca/node_modules/ember-cli-head/package.json"
+        },
+        {
+          "name": "ember-get-config",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-get-config.b073fa6d/node_modules/ember-get-config",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-showdown",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-showdown.4ff2b03d/node_modules/ember-cli-showdown",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-auto-import",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-auto-import.8e77bba1/node_modules/ember-auto-import",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-showdown.4ff2b03d/node_modules/ember-cli-showdown/package.json"
+        },
+        {
+          "name": "qunit-dom",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/qunit-dom.46ea9c0d/node_modules/qunit-dom",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-test-loader",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-test-loader.0e41ad93/node_modules/ember-cli-test-loader",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/ember-qunit@8.1.0_@ember+test-helpers@3.3.1_ember-source@6.4.0_qunit@2.21.1/node_modules/ember-qunit/package.json"
+        },
+        {
+          "name": "loader.js",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/loader.js.0d75878a/node_modules/loader.js",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "field-guide-default-template",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/field-guide-default-template.33a96204/node_modules/field-guide-default-template",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-htmlbars",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-htmlbars.25665bf4/node_modules/ember-cli-htmlbars",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-in-element-polyfill.47dc843e/node_modules/ember-in-element-polyfill/package.json"
+        },
+        {
+          "name": "ember-angle-bracket-invocation-polyfill",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-angle-bracket-invocation-polyfill.4cc2f328/node_modules/ember-angle-bracket-invocation-polyfill",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/field-guide-default-template.33a96204/node_modules/field-guide-default-template/package.json"
+        },
+        {
+          "name": "ember-compatibility-helpers",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-compatibility-helpers.410b20bb/node_modules/ember-compatibility-helpers",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-modifier-manager-polyfill.5b9fb6bb/node_modules/ember-modifier-manager-polyfill/package.json"
+        },
+        {
+          "name": "ember-try",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-try.70427a1b/node_modules/ember-try",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-test-selectors",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-test-selectors.433ba122/node_modules/ember-test-selectors",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-sri",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-sri.2b0c81a2/node_modules/ember-cli-sri",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-terser",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-terser.d89fe5b8/node_modules/ember-cli-terser",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "broccoli-asset-rev",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/broccoli-asset-rev.1748b4bf/node_modules/broccoli-asset-rev",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "prember",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/prember.5143c40c/node_modules/prember",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-dependency-checker",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-dependency-checker.8c76304c/node_modules/ember-cli-dependency-checker",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-clean-css",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-clean-css.67eb4a86/node_modules/ember-cli-clean-css",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "@glimmer/tracking",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@glimmer/tracking.6ed60569/node_modules/@glimmer/tracking",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "@ember/test-helpers",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/test-helpers.4a5a5147/node_modules/@ember/test-helpers",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-htmlbars",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-htmlbars.ff795bb2/node_modules/ember-cli-htmlbars",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-prism.a079c71e/node_modules/ember-prism/package.json"
+        },
+        {
+          "name": "ember-auto-import",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-auto-import.357aed3f/node_modules/ember-auto-import",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-prism.a079c71e/node_modules/ember-prism/package.json"
+        },
+        {
+          "name": "@embroider/macros",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@embroider/macros.1496f5c3/node_modules/@embroider/macros",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/render-modifiers.e0413296/node_modules/@ember/render-modifiers/package.json"
+        },
+        {
+          "name": "@ember/test-waiters",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/test-waiters.f5be2967/node_modules/@ember/test-waiters",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/test-helpers.4a5a5147/node_modules/@ember/test-helpers/package.json"
+        },
+        {
+          "name": "@ember/optional-features",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@ember/optional-features.df206924/node_modules/@ember/optional-features",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-inject-live-reload",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-inject-live-reload.7641eb85/node_modules/ember-cli-inject-live-reload",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "@embroider/synthesized-styles",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@embroider/synthesized-styles",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "@embroider/synthesized-vendor",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/@embroider/synthesized-vendor",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-source",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/ember-source@6.4.0_@glimmer+component@2.0.0_rsvp@4.8.5/node_modules/ember-source",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-qunit",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/ember-qunit@8.1.0_@ember+test-helpers@3.3.1_ember-source@6.4.0_qunit@2.21.1/node_modules/ember-qunit",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-page-title",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/ember-page-title@8.2.3_ember-source@6.4.0/node_modules/ember-page-title",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-welcome-page",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/ember-welcome-page@7.0.2/node_modules/ember-welcome-page",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-html-excerpt",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/ember-html-excerpt@1.0.1_@babel+core@7.24.9/node_modules/ember-html-excerpt",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-babel",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-babel.e3ba3589/node_modules/ember-cli-babel",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-showdown.4ff2b03d/node_modules/ember-cli-showdown/package.json"
+        },
+        {
+          "name": "@glimmer/component",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/@glimmer+component@2.0.0/node_modules/@glimmer/component",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "@embroider/router",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/node_modules/.pnpm/@embroider+router@3.0.1_@embroider+core@4.0.2/node_modules/@embroider/router",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/package.json"
+        },
+        {
+          "name": "ember-cli-babel",
+          "root": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-cli-babel.0de0d09b/node_modules/ember-cli-babel",
+          "canResolveFromFile": "/Users/mansona/git/opensource/empress/field-guide/field-guide/lib/rewritten-packages/ember-modifier-manager-polyfill.5b9fb6bb/node_modules/ember-modifier-manager-polyfill/package.json"
+        }
+      ],
+      "isLazy": false
+    }
+  ],
+  "modulePrefix": "field-guide",
+  "staticAppPaths": [],
+  "emberVersion": "6.4.0",
+  "splitAtRoutes": [],
+  "activePackageRules": [],
+  "options": {
+    "staticInvokables": true,
+    "allowUnsafeDynamicComponents": false
+  }
+}

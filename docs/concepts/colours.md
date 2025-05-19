@@ -27,10 +27,10 @@ If you want to try different text sizes you can pass in `@textClasses` with an a
 You can even pass multiple colours of text as classes too using `@textColorClasses`:
 
 <ColorPallet
-  @color="#E04E39"
-  @name="Brand"
-  @variable="--color-brand"
-  @class-name="bg-brand"
-  @textClasses={{array 'field-guide-small' 'field-guide-medium' 'field-guide-large'}}
-  @textColorClasses={{array 'field-guide-default' 'field-guide-white'}}
+@color="#E04E39"
+@name="Brand"
+@variable="--color-brand"
+@class-name="bg-brand"
+@textClasses={{array 'field-guide-small' 'field-guide-medium' 'field-guide-large'}}
+@textColorClasses={{array 'field-guide-default' 'field-guide-white'}}
 />

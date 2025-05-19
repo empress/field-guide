@@ -1,0 +1,39 @@
+diff --git a/dist/src/esbuild-resolver.js b/dist/src/esbuild-resolver.js
+index 5e6e42f8838c30464974134c1e1f7afba6e1d4c8..e40ee15d62764fb402ab5316171a2a3a00098a79 100644
+--- a/dist/src/esbuild-resolver.js
++++ b/dist/src/esbuild-resolver.js
+@@ -9,11 +9,33 @@ import { hbsToJS } from '@embroider/core';
+ import { Preprocessor } from 'content-tag';
+ import { extname } from 'path';
+ import { BackChannel } from './backchannel.js';
++
+ export function esBuildResolver() {
+     let resolverLoader = new ResolverLoader(process.cwd());
+     let preprocessor = new Preprocessor();
+     async function transformAndAssert(src, filename) {
+-        const result = await transformAsync(src, { filename });
++        const result = await transformAsync(src, { filename, plugins: [
++          [
++            'module:decorator-transforms', {
++              runtime: {
++                import: 'decorator-transforms/runtime-esm',
++              }
++            }
++          ],
++          [
++                'babel-plugin-ember-template-compilation',
++                {
++                  compilerPath: 'ember-source/dist/ember-template-compiler.js',
++                  enableLegacyModules: [
++                    'ember-cli-htmlbars',
++                    'ember-cli-htmlbars-inline-precompile',
++                    'htmlbars-inline-precompile',
++                  ],
++                  // transforms: [...templateCompatSupport()],
++                },
++              ],
++      ]
++      });
+         if (!result || result.code == null) {
+             throw new Error(`Failed to load file ${filename} in esbuild-hbs-loader`);
+         }

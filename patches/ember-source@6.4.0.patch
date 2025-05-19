@@ -1,0 +1,18 @@
+diff --git a/dist/packages/@ember/template-compiler/lib/template.js b/dist/packages/@ember/template-compiler/lib/template.js
+index a70b8d37d008ee91df0a25677e435573f14f195b..64c95064d4e40350d990c4b666e21669df92484e 100644
+--- a/dist/packages/@ember/template-compiler/lib/template.js
++++ b/dist/packages/@ember/template-compiler/lib/template.js
+@@ -2110,11 +2110,11 @@ function template(templateString, providedOptions) {
+   const evaluate = buildEvaluator(options);
+   const normalizedOptions = compileOptions(options);
+   const component = normalizedOptions.component ?? templateOnly();
+-  queueMicrotask(() => {
++  
+     const source = precompile(templateString, normalizedOptions);
+     const template = templateFactory(evaluate(`(${source})`));
+     setComponentTemplate(template, component);
+-  });
++  
+   return component;
+ }
+ const evaluator = source => {

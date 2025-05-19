@@ -9,5 +9,5 @@ Simplest use case: a button with text in it, telling the user what to do.
 ```html
 Count: {{this.count}}
 
-<button type="button" name="button" {{action "clickButton"}}>Click Me</button>
+<button type="button" name="button" {{on "click" this.clickButton}}>Click Me</button>
 ```

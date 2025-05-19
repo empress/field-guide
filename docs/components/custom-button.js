@@ -1,12 +1,11 @@
-/* eslint-disable ember/no-classic-components, ember/no-classic-classes, ember/require-tagless-components, ember/no-actions-hash, prettier/prettier */
-import Component from '@ember/component';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 
-export default Component.extend({
-  count: 0,
+export default class CustomButtonClass extends Component {
+  @tracked
+  count = 0;
 
-  actions: {
-    clickButton() {
-      this.set('count', this.count+1);
-    }
-  }
-});
+  clickButton = () => {
+    this.count = this.count + 1;
+  };
+}

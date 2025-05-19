@@ -1,0 +1,26 @@
+{
+  "/index.html": {
+    "head": "<meta name=\"undefined/config/environment\" content=\"%7B%22EmberENV%22%3A%7B%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%7D\" />\n<link href=\"https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap\" rel=\"stylesheet\">",
+    "test-head": "",
+    "head-footer": "",
+    "test-head-footer": "",
+    "body": "",
+    "test-body": "",
+    "body-footer": "",
+    "test-body-footer": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  if (!EmberENV.TESTS_FILE_LOADED) {\n    throw new Error('The tests file was not loaded. Make sure your tests index.html includes \"assets/tests.js\".');\n  }\n});\n</script>",
+    "config-module": "var prefix = 'undefined';\ntry {\n  var metaName = prefix + '/config/environment';\n  var rawConfig = document.querySelector('meta[name=\"' + metaName + '\"]').getAttribute('content');\n  var config = JSON.parse(decodeURIComponent(rawConfig));\n\n  var exports = { 'default': config };\n\n  Object.defineProperty(exports, '__esModule', { value: true });\n\n  return exports;\n}\ncatch(err) {\n  throw new Error('Could not read config from meta tag with name \"' + metaName + '\".');\n}\n",
+    "app-boot": "\n          if (!runningTests) {\n            require(\"undefined/app\")[\"default\"].create({});\n          }\n        "
+  },
+  "/tests/index.html": {
+    "head": "<meta name=\"undefined/config/environment\" content=\"%7B%22EmberENV%22%3A%7B%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%7D\" />\n<link href=\"https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap\" rel=\"stylesheet\">",
+    "test-head": "",
+    "head-footer": "",
+    "test-head-footer": "",
+    "body": "",
+    "test-body": "",
+    "body-footer": "",
+    "test-body-footer": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  if (!EmberENV.TESTS_FILE_LOADED) {\n    throw new Error('The tests file was not loaded. Make sure your tests index.html includes \"assets/tests.js\".');\n  }\n});\n</script>",
+    "config-module": "var prefix = 'undefined';\ntry {\n  var metaName = prefix + '/config/environment';\n  var rawConfig = document.querySelector('meta[name=\"' + metaName + '\"]').getAttribute('content');\n  var config = JSON.parse(decodeURIComponent(rawConfig));\n\n  var exports = { 'default': config };\n\n  Object.defineProperty(exports, '__esModule', { value: true });\n\n  return exports;\n}\ncatch(err) {\n  throw new Error('Could not read config from meta tag with name \"' + metaName + '\".');\n}\n",
+    "app-boot": "\n          if (!runningTests) {\n            require(\"undefined/app\")[\"default\"].create({});\n          }\n        "
+  }
+}

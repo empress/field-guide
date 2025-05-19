@@ -27,7 +27,7 @@ npx ember install field-guide field-guide-default-template
 
 It will ask you if you want to update the `index.html` file and you should say yes 👍 It will also create a `docs` folder with some example files to get you started.
 
-If you want to see the documentation site running on your local machine just run `npm start` and you will be able to navigate to  [http://localhost:4200](http://localhost:4200) to see the docs in action.
+If you want to see the documentation site running on your local machine just run `npm start` and you will be able to navigate to [http://localhost:4200](http://localhost:4200) to see the docs in action.
 
 To build the static output directory, run the **standard** build process for a production Ember application:
 
@@ -37,7 +37,6 @@ npx ember build -prod
 
 This will generate a fully static output of your site in the `dist` folder.
 
-
 ## Usage
 
 ### Configuring
@@ -46,35 +45,37 @@ The default blueprint will update your `tests/dummy/config/environment.js` file 
 
 ```javascript
 let ENV = {
-
   // leave all the other config intact and update the following key
 
-  'field-guide': {
-    name: 'Ember', // product name
-    logo: '/ember-logo.png', // if you don't have a logo it will create one for you from the product name
-    copyright: 'Ember Field Guide is designed to document the [ember-styleguide](https://github.com/ember-learn/ember-styleguide) project. For more information view the readme',
-    social: [{
-      name: 'github',
-      title: 'Ember Styleguide - Repository',
-      link: 'https://github.com/ember-learn/ember-styleguide'
-    }, {
-      name: 'twitter',
-      title: 'Ember Styleguide - Twitter',
-      link: 'https://twitter.com/emberjs'
-    }]
-  }
-}
+  "field-guide": {
+    name: "Ember", // product name
+    logo: "/ember-logo.png", // if you don't have a logo it will create one for you from the product name
+    copyright:
+      "Ember Field Guide is designed to document the [ember-styleguide](https://github.com/ember-learn/ember-styleguide) project. For more information view the readme",
+    social: [
+      {
+        name: "github",
+        title: "Ember Styleguide - Repository",
+        link: "https://github.com/ember-learn/ember-styleguide",
+      },
+      {
+        name: "twitter",
+        title: "Ember Styleguide - Twitter",
+        link: "https://twitter.com/emberjs",
+      },
+    ],
+  },
+};
 ```
 
 **Note:**
+
 - The images like `/ember-logo.png` will need to be in your `tests/dummy/public` folder in your addon.
 - You can add as many social links as you want in the `social` array. However, remember to add a logo image in your `public` folder for the custom social links with a name matching the `name` field in your link object. If you are using `field-guide-default-template`, the logos for `github` and `twitter` links will be included by the template for you.
-
 
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
-
 
 ## License
 
