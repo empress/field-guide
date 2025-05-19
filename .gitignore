@@ -23,5 +23,6 @@
 
 # broccoli-debug
 /DEBUG/
+/tmp/
 
 .changelog
