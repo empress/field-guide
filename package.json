@@ -10,6 +10,7 @@
   "repository": "https://github.com/empress/field-guide",
   "license": "MIT",
   "author": "Chris Manson <chris@manson.ie>",
+  "bin": "./cli.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
