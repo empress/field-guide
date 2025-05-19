@@ -79,7 +79,8 @@
     "walk-sync": "^2.2.0"
   },
   "peerDependencies": {
-    "ember-cli": "*"
+    "ember-cli": "*",
+    "ember-source": "*"
   },
   "peerDependenciesMeta": {
     "ember-cli": {
