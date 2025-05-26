@@ -1,5 +1,4 @@
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
 import config from 'ember-get-config';
 import { inject as service } from '@ember/service';
 
