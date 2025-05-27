@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-05-27)
+
+field-guide 3.0.1 (patch)
+
+#### :bug: Bug Fix
+* `field-guide`
+  * [#104](https://github.com/empress/field-guide/pull/104) remove ember-fetch as a dependency ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
 ## Release (2024-07-26)
 
 field-guide 3.0.0 (major)
