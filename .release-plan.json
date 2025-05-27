@@ -1,17 +1,22 @@
 {
   "solution": {
     "field-guide": {
-      "impact": "patch",
-      "oldVersion": "3.0.0",
-      "newVersion": "3.0.1",
+      "impact": "minor",
+      "oldVersion": "3.0.1",
+      "newVersion": "3.1.0",
+      "tagName": "latest",
       "constraints": [
         {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
           "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-05-27)\n\nfield-guide 3.0.1 (patch)\n\n#### :bug: Bug Fix\n* `field-guide`\n  * [#104](https://github.com/empress/field-guide/pull/104) remove ember-fetch as a dependency ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
+  "description": "## Release (2025-05-27)\n\n* field-guide 3.1.0 (minor)\n\n#### :rocket: Enhancement\n* `field-guide`\n  * [#106](https://github.com/empress/field-guide/pull/106) move from ember-prism to prismjs ([@mansona](https://github.com/mansona))\n\n#### :house: Internal\n* `field-guide`\n  * [#109](https://github.com/empress/field-guide/pull/109) update release plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
 }

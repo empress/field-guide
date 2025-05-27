@@ -2,6 +2,21 @@
 
 ## Release (2025-05-27)
 
+* field-guide 3.1.0 (minor)
+
+#### :rocket: Enhancement
+* `field-guide`
+  * [#106](https://github.com/empress/field-guide/pull/106) move from ember-prism to prismjs ([@mansona](https://github.com/mansona))
+
+#### :house: Internal
+* `field-guide`
+  * [#109](https://github.com/empress/field-guide/pull/109) update release plan ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
+## Release (2025-05-27)
+
 field-guide 3.0.1 (patch)
 
 #### :bug: Bug Fix
