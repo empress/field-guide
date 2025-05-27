@@ -38,29 +38,9 @@ module.exports = {
     return new MergeTrees([tree, backingClasses]);
   },
 
-  included(app) {
+  included() {
     this.import('vendor/ember/ember-template-compiler.js');
-
-    if(!app.options['ember-prism']) {
-      app.options['ember-prism'] = {
-        // theme: 'okaidia',
-
-        components: [
-          'apacheconf',
-          'bash',
-          'css',
-          'handlebars',
-          'http',
-          'javascript',
-          'json',
-          'markup-templating',
-          'ruby',
-          'scss'
-        ],
-
-        plugins: ['line-numbers', 'normalize-whitespace']
-      }
-    }
+    this.import('node_modules/prismjs/themes/prism.css');
 
     this._super.included.apply(this, arguments);
   },
