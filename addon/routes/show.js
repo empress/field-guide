@@ -1,5 +1,4 @@
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
 import config from 'ember-get-config';
 import { inject as service } from '@ember/service';
 
@@ -7,8 +6,13 @@ import normalisePath from '../utils/normalise-path';
 
 export default class ShowRoute extends Route {
   @service router;
+  @service fastboot;
 
   model(params) {
+    let host = this.fastboot.isFastBoot
+      ? `${this.fastboot.request.protocol}//${this.fastboot.request.host}`
+      : '';
+
     // remove trailing slash
     let path = params.path.replace(/\/$/, '');
 
@@ -21,7 +25,7 @@ export default class ShowRoute extends Route {
 
     path = normalisePath(path, toc);
 
-    return fetch(`${config.rootURL}docs/${path}.json`)
+    return fetch(`${host}${config.rootURL}docs/${path}.json`)
       .then((res) => res.json())
       .then((res) => {
         return {

@@ -1,11 +1,15 @@
-/* eslint-disable ember/no-classic-classes, prettier/prettier */
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
 import config from 'ember-get-config';
+import { inject as service } from '@ember/service';
 
-export default Route.extend({
+export default class ApplicationRoute extends Route {
+  @service fastboot;
+
   model() {
-    return fetch(`${config.rootURL}toc.json`)
-      .then(res => res.json())
+    let host = this.fastboot.isFastBoot
+      ? `${this.fastboot.request.protocol}//${this.fastboot.request.host}`
+      : '';
+
+    return fetch(`${host}${config.rootURL}toc.json`).then((res) => res.json());
   }
-})
+}
