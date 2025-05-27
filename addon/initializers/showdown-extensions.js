@@ -1,5 +1,26 @@
 /* eslint-disable prettier/prettier */
-/* global Prism */
+import Prism from 'prismjs';
+
+import apacheconf from 'prismjs/components/prism-apacheconf';
+import bash from 'prismjs/components/prism-bash';
+import css from 'prismjs/components/prism-css';
+import handlebars from 'prismjs/components/prism-handlebars';
+import http from 'prismjs/components/prism-http';
+import javascript from 'prismjs/components/prism-javascript';
+import json from 'prismjs/components/prism-json';
+import markupTemplating from 'prismjs/components/prism-markup-templating';
+import loadLanguages from 'prismjs/components/index';
+
+loadLanguages([
+  apacheconf,
+  bash,
+  css,
+  handlebars,
+  http,
+  javascript,
+  json,
+  markupTemplating,
+]);
 
 import showdown from 'showdown';
 
