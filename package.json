@@ -80,7 +80,7 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-qunit": "^8.1.1",
-    "field-guide-default-template": "^2.0.0",
+    "field-guide-default-template": "^4.0.0",
     "lint-to-the-future": "^0.6.0",
     "lint-to-the-future-eslint": "^0.2.1",
     "loader.js": "^4.7.0",
